@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile - Adam Malik Ibrahim</title>
+    <link rel="icon" href="profile1.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #1f1f1f; /* Gelap dengan sentuhan modern */
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #333;
+            opacity: 0.6;
+            z-index: 1;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+            z-index: 2;
+        }
+
+        .content {
+            padding: 80px 15px;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 0.9rem;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin: 0 15px;
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #6c757d; /* Warna abu-abu terang pada hover */
+        }
+
+        .card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border-radius: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Efek hover card lebih dramatis */
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card-img-top:hover {
+            transform: scale(1.1);
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .card-text {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .btn-custom {
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .btn-custom:hover {
+            background-color: #6c757d; /* Efek hover tombol */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="profile1.jpg" alt="Profile Picture" class="profile-img">
+            <h1 class="mt-4">Adam Malik Ibrahim</h1>
+            <p>Full Stack Developer | Student</p>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="container">
+            <!-- About Section -->
+            <section class="section text-center">
+                <h2>About Me</h2>
+                <p class="mt-3">
+                    I am a student who is constantly eager to explore new ideas and challenges. My passion for technology drives me to dive into the world of development, where I can create innovative solutions and improve the user experience through dynamic and responsive web applications. 
+                </p>
+                <p>
+                    I have a strong foundation in various programming languages and frameworks, but what excites me the most is the constant learning process. Every new project is an opportunity to explore a different aspect of development, whether it's front-end design, back-end functionality, or integrating cutting-edge technologies.
+                </p>
+                <p>
+                    What motivates me as a developer is the ability to solve problems, whether it's finding efficient algorithms to enhance performance or creating intuitive user interfaces. I thrive in environments that encourage creativity and problem-solving. 
+                </p>
+                <p>
+                    I believe that continuous learning and adapting to new trends is key to being a successful developer, and I am always excited about what the future holds in the world of technology.
+                </p>
+            </section>
+            
+
+            <!-- Skills Section -->
+            <section class="section">
+                <h2 class="text-center">Skills</h2>
+                <div class="row text-center mt-4">
+                    <!-- Frontend Development -->
+                    <div class="col-md-4">
+                        <h4>Frontend Development</h4>
+                        <div class="mt-3">
+                            <i class="fab fa-html5 fa-3x" title="HTML" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="HyperText Markup Language"></i>
+                            <i class="fab fa-css3-alt fa-3x mx-3" title="CSS" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Cascading Style Sheets"></i>
+                            <i class="fab fa-js-square fa-3x" title="JavaScript" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Scripting Language for Web"></i>
+                            <i class="fab fa-react fa-3x mx-3" title="ReactJS" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="JavaScript Library for UI"></i>
+                        </div>
+                    </div>
+                    
+            
+                    <!-- Backend Development -->
+                    <div class="col-md-4">
+                        <h4>Backend Development</h4>
+                        <div class="mt-3">
+                            <i class="fab fa-php fa-3x" data-bs-toggle="tooltip" title="PHP - Backend Scripting Language"></i>
+                            <i class="fab fa-laravel fa-3x mx-3" data-bs-toggle="tooltip" title="Laravel - PHP Framework"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Tools & Platforms -->
+                    <div class="col-md-4">
+                        <h4>Tools & Platforms</h4>
+                        <div class="mt-3">
+                            <i class="fas fa-database fa-3x" data-bs-toggle="tooltip" title="MySQL - Relational Database"></i>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </section>
+            
+
+            <!-- Portfolio Section -->
+            <section class="section text-center">
+                <h2>Portfolio</h2>
+                <p class="mt-3">Check out some of the projects I have worked on:</p>
+                <div class="row justify-content-center mt-4">
+                    <!-- Project 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="tictactoe.png" class="card-img-top" alt="Tic-Tac-Toe">
+                            <div class="card-body">
+                                <h5 class="card-title">Tic-Tac-Toe</h5>
+                                <p class="card-text">The classic Tic-Tac-Toe game made with JavaScript and HTML. This project allows you to play with your friends.</p>
+                                <a href="https://mlikk.netlify.app/" class="btn-custom">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="todolist.png" class="card-img-top" alt="To-Do List">
+                            <div class="card-body">
+                                <h5 class="card-title">To-Do List</h5>
+                                <p class="card-text">A task management web that allows users to add,  and delete tasks.</p>
+                                <a href="https://mlik.netlify.app/" class="btn-custom">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            
+            
+
+            <!-- Contact Section
+            <section class="section text-center">
+                <h2>Contact Me</h2>
+                <p class="mt-3">Feel free to reach out if you'd like to collaborate or just say hi!</p>
+                <p>Email: <a href="mailto:adam.malik@example.com">adam.malik@example.com</a></p>
+                <p>Phone: +62 812 3456 7890</p>
+
+                <div class="social-icons mt-4">
+                    <a href="#"><i class="bi bi-github"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                </div>
+            </section> -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Adam Malik Ibrahim.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+    });
+</script>
+
+</body>
+</html>
